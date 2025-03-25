@@ -135,16 +135,18 @@
     <div class="bgz img-2" style="align-content: center !important;" id="contact">
         <div class="mob-fix container d-flex text-light" id="intro" data-aos="fade-up">
             <div class="container justify-content-center text-start" style="margin: 10rem auto">
-                <form id="email-form"  style="margin: 0 auto !important" class="w-50">
+                <form id="email-form"  style="margin: 0 auto !important" class="w-50" action="email.php" method="POST">
                     <h1>Contact </h1>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input type="email" class="form-control" onkeyup="charcountupdate2(this.value)" id="email" placeholder="name@example.com">
                     </div>
                     <div class="mb-6">
                         <label for="exampleFormControlTextarea1" class="form-label">Inquiry:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" onkeyup="charcountupdate(this.value)" id="inquiry" rows="3"></textarea>
                     </div>
+                    <br>
+                    <p id="charcount"></p>
                     <br>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
