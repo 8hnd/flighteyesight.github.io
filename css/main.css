@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+.imgIn {
+    animation: scaleIn 2s ease 0s 1 normal forwards;
+}
+@keyframes scaleIn {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.mg {
+    height: 100vh;
+}
+.mgn {
+    margin: 0px 60px;
+}
+.bgz2 {
+    height: 300vh !important;
+    backdrop-filter: brightness(50%);
+    background-size: cover;
+}
+.bgz {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    backdrop-filter: brightness(50%);
+    background-size: cover;
+}
+.bgz250 {
+    height: 200vh;
+    backdrop-filter: brightness(50%);
+    background-size: cover;
+}
+
+.vw100 {
+    width: 100vw !important;
+}
+.img-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)) , url('../img/drone/1.jpg');
+}
+
+.img-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)) , url('../img/drone/2.jpg');
+}
+
+.img-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)) , url('../img/drone/3.jpg');
+}
+
+.img-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)) , url('../img/drone/4.jpg');
+}
+
+.img-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)) , url('../img/drone/5.jpg');
+}
+
+.img-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)) , url('../img/drone/6.jpg');
+}
+
+.st2 a {
+    position: sticky !important;
+    top: 0;
+    margin: 100%;
+}
+.st2 {
+    z-index: 10 !important;
+}
+
+.img-fixer {
+    object-fit: cover;
+    width: 150px;
+    height: 250px;
+}
+
+.img-fixer2 {
+    object-fit: cover;
+    width: 480px;
+    height: 250px;
+}
+@media (max-width: 900px) {
+    .bgz250 {
+        height: 430vh; !important;
+    }
+    .bgz2 {
+        height: 200vh !important;
+        backdrop-filter: brightness(50%);
+        background-size: cover;
+    }
+    .ddd {
+        margin: 1rem 0 !important;
+    }
+    .img-fixer2 {
+        object-fit: cover;
+        width: 280px;
+        height: 150px;
+    }
+}
