@@ -5,6 +5,19 @@ html, body {
 body {
     color-scheme: dark;
     background-color: rgb(17, 17, 17);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-image: ('../img/drone/5.jpg');
+    min-height:100vh
+}
+
+
+
+body { 
+    background: #fff url('../img/drone/2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+  }
 .imgIn {
     animation: scaleIn 2s ease 0s 1 normal forwards;
 }
@@ -45,26 +58,16 @@ body {
     position: relative;
 }
 .imgbg {
-        background-image:         linear-gradient(
-          rgba(0, 0, 0, 0.4), 
-          rgba(0, 0, 0, 0.4)
-        ), url('../img/drone/2.jpg');
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.4);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
 }
 .darkbg {
-      background-image:         linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ), url('../img/drone/2.jpg');
+      background-color: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
+
 }
 .st2 a {
     position: sticky !important;
@@ -80,13 +83,25 @@ body {
     width: 150px;
     height: 250px;
 }
-
+.mg {
+    backdrop-filter: blur(10px);
+}
 .img-fixer2 {
     object-fit: cover;
     width: 480px;
     height: 250px;
 }
 @media (max-width: 900px) {
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../img/drone/5.jpg');
+        z-index: -1;
+      }
     .bgz250 {
         height: 330vh; !important;
     }
