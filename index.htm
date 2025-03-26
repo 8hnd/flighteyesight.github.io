@@ -152,20 +152,19 @@
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </div> -->
-                <form id="email-form"  style="margin: 0 auto !important" class="w-50" action="https://serv.8hnd.uk/email.php" method="POST"> -->
+                <form id="email-form"  style="margin: 0 auto !important" class="w-50"  method="POST" action="https://serv.8hnd.uk/email.php">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" onkeyup="charcountupdate2(this.value)" id="email" placeholder="name@example.com">
+                            <input type="email" class="form-control" onkeyup="charcountupdate2(this.value)" name="email" placeholder="name@example.com">
                         </div>
                         <div class="mb-6">
                             <label for="exampleFormControlTextarea1" class="form-label">Inquiry:</label>
-                            <textarea class="form-control" onkeyup="charcountupdate(this.value)" id="inquiry" rows="3"></textarea>
+                            <textarea class="form-control" onkeyup="charcountupdate(this.value)" name="inquiry" rows="3"></textarea>
                         </div>
                         <br>
                         <p id="charcount"></p>
                         <br>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                   
                 </form>
             </div>
         </div>
