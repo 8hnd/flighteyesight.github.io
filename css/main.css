@@ -34,7 +34,7 @@ body {
     max-height: 100vh;
 }
 .bgz250 {
-    height: 300vh;
+    height: 200vh;
 }
 
 .vw100 {
@@ -88,7 +88,7 @@ body {
 }
 @media (max-width: 900px) {
     .bgz250 {
-        height: 430vh; !important;
+        height: 330vh; !important;
     }
     .bgz2 {
         height: 200vh !important;
