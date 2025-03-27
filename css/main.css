@@ -30,6 +30,15 @@ body {
 		transform: scale(1);
 	}
 }
+.btn-primary {
+    border-color: white;
+    background-color: rgb(0,0,0,0);
+}
+.btn-primary:hover,
+.btn-primary:active {
+    border-color: white !important;
+    background-color: rgb(0,0,0,5) !important;
+}
 .mg {
     height: 100vh;
 }
@@ -44,7 +53,7 @@ body {
 }
 .bgz {
     height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 .bgz250 {
     height: 200vh;
