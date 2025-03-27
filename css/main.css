@@ -113,7 +113,6 @@ body {
         margin-top: 50px;
         padding-top: 50px;
         height: 200vh !important;
-        backdrop-filter: brightness(50%);
     }
     .fixerfix {
         height: 450vh;
